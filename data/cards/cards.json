@@ -1,0 +1,93 @@
+[
+  {
+    "id": "1",
+    "title": "2080)센서티브미세모",
+    "description": "",
+    "date": "2024-10-21",
+    "storeType": "GS24",
+    "category": "생활용품",
+    "imagePath": "coke",
+    "price": "3,200",
+    "eventType": "1+1",
+    "comment": 1,
+    "featured": true
+  },
+  {
+    "id": "2",
+    "title": "2080)슈퍼클린초극세모",
+    "description": "",
+    "date": "2024-10-21",
+    "storeType": "CU",
+    "category": "생활용품",
+    "imagePath": "sprite",
+    "price": "2,000",
+    "eventType": "1+1",
+    "comment": 0,
+    "featured": true
+  },
+  {
+    "id": "3",
+    "title": "2080)진지발리스치약",
+    "description": "",
+    "date": "2024-10-21",
+    "storeType": "GS24",
+    "category": "생활용품",
+    "imagePath": "zeroCoke",
+    "price": "3,900",
+    "eventType": "1+1",
+    "comment": 0,
+    "featured": true
+  },
+  {
+    "id": "4",
+    "title": "2080)치약",
+    "description": "",
+    "date": "2024-10-21",
+    "storeType": "CU",
+    "category": "생활용품",
+    "imagePath": "coke",
+    "price": "4,000",
+    "eventType": "1+1",
+    "comment": 0,
+    "featured": true
+  },
+  {
+    "id": "5",
+    "title": "2080)칫솔",
+    "description": "",
+    "date": "2024-10-21",
+    "storeType": "CU",
+    "category": "생활용품",
+    "imagePath": "sprite",
+    "price": "2,800",
+    "eventType": "1+1",
+    "comment": 0,
+    "featured": true
+  },
+  {
+    "id": "6",
+    "title": "2080)칫솔더블액션플러스",
+    "description": "",
+    "date": "2024-10-21",
+    "storeType": "emart24",
+    "category": "생활용품",
+    "imagePath": "zeroCoke",
+    "price": "2,000",
+    "eventType": "1+1",
+    "comment": 0,
+    "featured": true
+  },
+  {
+    "id": "7",
+    "title": "2080)키즈가글250ml딸기맛(브레드)",
+    "description": "",
+    "date": "2024-10-21",
+    "storeType": "emart24",
+    "category": "생활용품",
+    "imagePath": "coke",
+    "price": "5,800",
+    "eventType": "1+1",
+    "comment": 1,
+    "featured": true
+  }
+]
