@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
+  trailingSlash: "/",
   //   webpack5: true,
   webpack: (config) => {
     config.cache = false;
@@ -8,10 +10,16 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "images.unsplash.com",
+        protocol: "http",
+        hostname: "tqklhszfkvzk6518638.cdn.ntruss.com",
         port: "",
-        pathname: "/*",
+        pathname: "/product/*",
+      },
+      {
+        protocol: "http",
+        hostname: "cdn2.bgfretail.com",
+        port: "",
+        pathname: "/bgfbrand/files/product/*",
       },
     ],
   },

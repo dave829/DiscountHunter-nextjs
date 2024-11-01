@@ -1,11 +1,12 @@
 import { readFile } from "fs/promises";
 import path from "path";
 
-export type Card = {
+type Card = {
   id: string;
   title: string;
   description: string;
-  date: Date;
+  //date: Date;
+  date: string;
   storeType: string;
   category: string;
   imagePath: string;
@@ -25,4 +26,4 @@ export async function getAllCards(): Promise<Card[]> {
 export async function getFeaturedCards(): Promise<Card[]> {
   return getAllCards() //
     .then((cards) => cards.filter((card) => card.featured));
-} 
+}

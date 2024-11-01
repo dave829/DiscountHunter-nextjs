@@ -1,5 +1,5 @@
-import CarouselSize from "@/components/Carousel_";
-import PaginationLink_ from "@/components/PaginationLink_";
+//import CarouselSize from "@/components/Carousel_";
+//import PaginationLink_ from "@/components/PaginationLink_";
 import Search from "@/components/Search";
 import Toggle_ from "@/components/Toggle_";
 
@@ -10,17 +10,15 @@ export default function Hero() {
     <section>
       <p>Hero</p>
       <div className="flex justify-center items-center">
-        <Search />
+        <Search size={100} />
       </div>
       <div className="my-5">
         <Toggle_ />
       </div>
       <div className="bg-slate-50 flex justify-center items-center">
-        <CarouselSize />
+        {/* <CarouselSize /> */}
       </div>
-      <div>
-        <PaginationLink_ />
-      </div>
+      <div>{/* <PaginationLink_ /> */}</div>
 
       {/* 로고 */}
       {/* <Image src={image} alt="" width={250} height={250} priority /> */}
