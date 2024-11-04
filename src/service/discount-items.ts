@@ -1,12 +1,13 @@
 import { Card } from "@/types/Card";
+import { storeName } from "@/types/StoreName";
 
-//편의점 실서버 자료
-export async function getAllDiscountHunterCards(): Promise<Card[]> {
+//행사 상품 모두 가져오기
+export async function requestAllEventProducts(): Promise<Card[]> {
   //const filePath = path.join(process.cwd(), "data", "cards", "cards.json");
   //return readFile(filePath, "utf-8")
 
   const res = await fetch(
-    `http://discounthunt.o-r.kr/api/v1/event-products`
+    `https://discounthunt.o-r.kr/api/v1/event-products`
     //{}
   )
     //   if (!res) {
@@ -41,3 +42,14 @@ export async function getAllDiscountHunterCards(): Promise<Card[]> {
 //     );
 //     return response.json();
 //   };
+
+// codes / 편의점 상점 이름, 사용여부 ,  가져오기
+export async function requestAllStoreName(): Promise<storeName[]> {
+  //const filePath = path.join(process.cwd(), "data", "cards", "cards.json");
+  //return readFile(filePath, "utf-8")
+
+  const res = await fetch("https://discounthunt.o-r.kr/api/v1/codes")
+    .then<storeName[]>((res) => res.json())
+    .then((data) => data);
+  return res;
+}

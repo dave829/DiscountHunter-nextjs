@@ -1,6 +1,10 @@
 //import { getFeaturedCards } from "@/service/cards";
-import { getAllDiscountHunterCards } from "@/service/discount-items";
+import {
+  requestAllEventProducts,
+  //requestAllStoreName,
+} from "@/service/discount-items";
 import CardsGrid from "./CardsGrid";
+//import StoreName from "./StoreName";
 
 export default async function FeaturedCards() {
   // 1. 모든 card 데이터를 읽어와야함
@@ -17,7 +21,7 @@ export default async function FeaturedCards() {
   // price: string;
   // eventType: string;
   // comment: number;
-  // featured: boolean;
+  // featured: boolean;>>>>>
   // [
   //   {
   //     id: '7',
@@ -37,8 +41,10 @@ export default async function FeaturedCards() {
   //console.log(featuredCards);
 
   /////////////////
-  const featuredCards = await getAllDiscountHunterCards(); // []
+  const featuredCards = await requestAllEventProducts(); // []
+  //const storeNameCard = await requestAllStoreName();
   //console.log(featuredCards);
+  //console.log(storeNameCard); //출력 제대로 안됨
 
   // 2. 모든 card 데이터를 보여줌
 
@@ -46,6 +52,7 @@ export default async function FeaturedCards() {
     <section>
       <h2>Featured Cards</h2>
       <CardsGrid cards={featuredCards} />
+      {/* <StoreName storeName={storeNameCard} /> */}
     </section>
   );
 }

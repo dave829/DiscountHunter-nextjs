@@ -16,6 +16,7 @@ type Card = {
   featured: boolean;
 };
 
+ 
 export async function getAllCards(): Promise<Card[]> {
   const filePath = path.join(process.cwd(), "data", "cards", "cards.json");
   return readFile(filePath, "utf-8")

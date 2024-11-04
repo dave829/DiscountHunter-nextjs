@@ -1,6 +1,6 @@
 //import CarouselSize from "@/components/Carousel_";
 //import PaginationLink_ from "@/components/PaginationLink_";
-import Search from "@/components/Search";
+import Search from "@/components/search/Search";
 import Toggle_ from "@/components/Toggle_";
 
 //import image from '../../public/images/profile.png' //로컬 이미지 경로 예시
@@ -10,7 +10,7 @@ export default function Hero() {
     <section>
       <p>Hero</p>
       <div className="flex justify-center items-center">
-        <Search size={100} />
+        <Search />
       </div>
       <div className="my-5">
         <Toggle_ />

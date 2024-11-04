@@ -18,7 +18,12 @@ export default function Header() {
         {/* <h1 className=" text-center  mb-3 text-5xl text-white font-bold [text-shadow:-5px_0px_#25F4EE,0px_5px_black,5px_0px_black,0px_-5px_#FE2C55]">
           Discount Hunter
         </h1> */}
-        <Image className="" src={DiscountHunterLogo} alt="logo" priority />
+        <Image
+          //className="hover:animate-spin"
+          src={DiscountHunterLogo}
+          alt="logo"
+          priority
+        />
       </Link>
       {/* </div> */}
       {/* <Image

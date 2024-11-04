@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  trailingSlash: "/",
-  //   webpack5: true,
   webpack: (config) => {
     config.cache = false;
     return config;
